@@ -6,9 +6,7 @@
 	<script type="text/javascript">
 		function function1(){
 			
-			$("#intro").text('');
-			$("#cont").text('');
-			
+			$("#wrapper").html('<button onclick="function1()">Click</button><div id="intro"></div><div id="cont"></div>');
 			//var people=[];
 			$.getJSON('people.json',function(data){
 				
