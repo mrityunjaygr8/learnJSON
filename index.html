@@ -4,16 +4,15 @@
 	<title>JSON Training</title>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
-	function function1(){
-		var people=[];
-
-		$.getJSON('people.json',function(data){
-			$.each(data.person,function(f){
-				var Cont="<br>"+f.name+"<br>"+f.phone+"<br>"+f.email+"<br>";
-				$(Cont).appendTo("#cont");
+		function function1(){
+			var people=[];
+			$.getJSON('people.json',function(data){
+				$.each(data.person,function(f){
+					var Cont="<br>"+f.name+"<br>"+f.phone+"<br>"+f.email+"<br>";
+					$(Cont).appendTo("#cont");
+				});
 			});
-		});
-	};
+		};
 	</script>
 </head>
 <body>
