@@ -8,7 +8,7 @@
 		var people=[];
 
 		$.getJSON('people.json',function(data){
-			$.each(data.person,function(i,f){
+			$.each(data.person,function(f){
 				var tblRow="<tr>"+"<td>"+f.firstName+"</td>"+"<td>"+f.lastName+"</td>"+"<td>"+f.job+"</td>"+"<td>"+f.role+"</td>"+"</tr>";
 				$(tblRow).appendTo("#userdata tbody");
 			});
