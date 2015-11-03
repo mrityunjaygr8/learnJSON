@@ -7,7 +7,7 @@
 		function function1(){
 			var people=[];
 			$.getJSON('people.json',function(data){
-				$.each(data.contact,function(f){
+				$.each(data.contact,function(i,f){
 					var Cont="<br>"+f.name+"<br>"+f.phone+"<br>"+f.email+"<br>";
 					$(Cont).appendTo("#cont");
 				});
