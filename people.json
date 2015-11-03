@@ -1,22 +1,14 @@
 {
-   "person": [
-       {
-           "firstName": "Clark",
-           "lastName": "Kent",
-           "job": "Reporter",
-           "role": 20
-       },
-       {
-           "firstName": "Bruce",
-           "lastName": "Wayne",
-           "job": "Playboy",
-           "role": 30
-       },
-       {
-           "firstName": "Peter",
-           "lastName": "Parker",
-           "job": "Photographer",
-           "role": 40
-       }
-   ]
+	"contact":[
+		{
+			"name":"Himadri Mishra",
+			"phone":"9452743571",
+			"email":"himadri.mishra.cse13@iitbhu.ac.in"
+		},
+		{
+			"name":"Yash Tatia",
+			"phone":"9838954830",
+			"email":"yash.tatia.eee13@iitbhu.ac.in"
+		}
+	]
 }
