@@ -9,8 +9,8 @@
 
 		$.getJSON('people.json',function(data){
 			$.each(data.person,function(f){
-				var tblRow="<tr>"+"<td>"+f.firstName+"</td>"+"<td>"+f.lastName+"</td>"+"<td>"+f.job+"</td>"+"<td>"+f.role+"</td>"+"</tr>";
-				$(tblRow).appendTo("#userdata tbody");
+				var Cont="<br>"+f.name+"<br>"+f.phone+"<br>"+f.email+"<br>";
+				$(Cont).appendTo("#cont");
 			});
 		});
 	});
@@ -18,19 +18,8 @@
 </head>
 <body>
 <div class="wrapper">
-	<div class="profile">
-		<table id="userdata" border="2">
-			<thead>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>Job</th>
-				<th>Role</th>
-			</thead>
-			<tbody>
-				
-			</tbody>
-		</table>
-	</div>
+	<button onclick="function1()">Click</button>
+	<div id="cont"></div>
 </div>
 </body>
 </html>
