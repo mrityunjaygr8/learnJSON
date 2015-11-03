@@ -7,6 +7,12 @@
 		function function1(){
 			var people=[];
 			$.getJSON('people.json',function(data){
+				
+				$.each(data.introduction,function(i,f){
+					var Intro="<br>"+f.intro+"<br>";
+					$(Intro).appendTo("#intro");
+				})
+				
 				$.each(data.contact,function(i,f){
 					var Cont="<br>"+f.name+"<br>"+f.phone+"<br>"+f.email+"<br>";
 					$(Cont).appendTo("#cont");
@@ -18,6 +24,7 @@
 <body>
 <div class="wrapper">
 	<button onclick="function1()">Click</button>
+	<div id="intro"></div>
 	<div id="cont"></div>
 </div>
 </body>
