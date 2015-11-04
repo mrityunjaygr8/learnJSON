@@ -5,7 +5,10 @@
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
 	
-		$(".but").click(function1);
+		$(document).ready(function(){
+			$('.but').click(function1);
+		});
+
 		function function1(){
 			var x=$(this).attr('id');
 			console.log(x);
