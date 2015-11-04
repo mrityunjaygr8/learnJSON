@@ -12,20 +12,16 @@
 		function function1(){
 			var x=$(this).attr('id');
 			console.log(x.charAt(1));
-			// $(".wrapper").html('<button onclick="function1()">Click</button><div id="intro"></div><div id="cont"></div>');
-			// //var people=[];
-			// $.getJSON('people.json',function(data){
-				
-			// 	$.each(data.introduction,function(i,f){
-			// 		var Intro="<br>"+f.intro+"<br>";
-			// 		$(Intro).appendTo("#intro");
-			// 	})
-				
-			// 	$.each(data.contact,function(i,f){
-			// 		var Cont="<br>"+f.name+"<br>"+f.phone+"<br>"+f.email+"<br>";
-			// 		$(Cont).appendTo("#cont");
-			// 	});
-			// });
+			$(".wrapper").html('<button id="b1" class="but">Click</button><button id="b2" class="but"><div id="intro"></div><div id="cont"></div>');
+			//var people=[];
+			$.getJSON('people.json',function(data){
+				$.each(data.events.event,function(i,f){
+					var Name="<br>"+f.name+"<br>";
+					var Council="<br>"+f.council+"<br>"
+					$(Council).appendto("#cont");
+					$(Name).appendTo("#intro");
+				});
+			});
 		};
 	</script>
 </head>
