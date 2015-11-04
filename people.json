@@ -3,12 +3,14 @@
 		{
 			"event":
 			{
-				"name":"Robonex",
-				"council":"SNTC"
-			},
-			{
-				"name":"creatrix",
-				"council":"cultural council"
+				{
+					"name":"Robonex",
+					"council":"SNTC"
+				},
+				{
+					"name":"creatrix",
+					"council":"cultural council"
+				}
 			}
 		}]	
 }
