@@ -16,8 +16,8 @@
 			//var people=[];
 			$.getJSON('people.json',function(data){
 				$.each(data.events.event,function(i,f){
-					var Name="<br>"+f.name+"<br>";
-					var Council="<br>"+f.council+"<br>"
+					var Name="<br>"+f.name[x]+"<br>";
+					var Council="<br>"+f.council[x]+"<br>"
 					$(Council).appendTo("#cont");
 					$(Name).appendTo("#intro");
 				});
