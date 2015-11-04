@@ -4,6 +4,8 @@
 	<title>JSON Training</title>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
+	
+		$(".but").click(function1);
 		function function1(){
 			console.log($(this).attr('id'));
 			// $(".wrapper").html('<button onclick="function1()">Click</button><div id="intro"></div><div id="cont"></div>');
@@ -25,8 +27,8 @@
 </head>
 <body>
 <div class="wrapper">
-	<button onclick="function1()" id="b1">Click</button>
-	<button onclick="function1()" id="b2">Click</button>
+	<button class="but" id="b1">Click</button>
+	<button class="but" id="b2">Click</button>
 	<div id="intro"></div>
 	<div id="cont"></div>
 </div>
