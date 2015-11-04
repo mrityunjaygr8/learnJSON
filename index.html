@@ -12,7 +12,7 @@
 		function function1(){
 			var x=parseInt($(this).attr('id').charAt(1));
 			console.log(x);
-			$(".wrapper").html('<button id="b1" class="but">Click</button><button id="b2" class="but">Click</button><div id="intro"></div><div id="cont"></div>');
+			$(".wrapper").html('<button id="b1" class="but">Click</button><br><button id="b2" class="but">Click</button><div id="intro"></div><div id="cont"></div>');
 			var Json='people.json';
 			var obj=JSON.parse(Json);
 			var Name=obj.events.event[x].name;
@@ -24,7 +24,7 @@
 </head>
 <body>
 <div class="wrapper">
-	<button class="but" id="b0">Click</button>
+	<button class="but" id="b0">Click</button><br>
 	<button class="but" id="b1">Click</button>
 	<div id="intro"></div>
 	<div id="cont"></div>
