@@ -15,8 +15,8 @@
 			$(".wrapper").html('<button id="b1" class="but">Click</button><button id="b2" class="but">Click</button><div id="intro"></div><div id="cont"></div>');
 			//var people=[];
 			$.getJSON('people.json',function(data){
-				var Name=data.events.event[x].name;
-				var Council=data.events.event[x].council;
+				var Name=data.events.event.name;
+				var Council=data.events.event.council;
 				$(Name).appendTo("#intro");
 				$(Council).appendTo("#cont");
 			});
