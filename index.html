@@ -5,27 +5,28 @@
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
 		function function1(){
-			
-			$(".wrapper").html('<button onclick="function1()">Click</button><div id="intro"></div><div id="cont"></div>');
-			//var people=[];
-			$.getJSON('people.json',function(data){
+			console.log($(this).attr('id'));
+			// $(".wrapper").html('<button onclick="function1()">Click</button><div id="intro"></div><div id="cont"></div>');
+			// //var people=[];
+			// $.getJSON('people.json',function(data){
 				
-				$.each(data.introduction,function(i,f){
-					var Intro="<br>"+f.intro+"<br>";
-					$(Intro).appendTo("#intro");
-				})
+			// 	$.each(data.introduction,function(i,f){
+			// 		var Intro="<br>"+f.intro+"<br>";
+			// 		$(Intro).appendTo("#intro");
+			// 	})
 				
-				$.each(data.contact,function(i,f){
-					var Cont="<br>"+f.name+"<br>"+f.phone+"<br>"+f.email+"<br>";
-					$(Cont).appendTo("#cont");
-				});
-			});
+			// 	$.each(data.contact,function(i,f){
+			// 		var Cont="<br>"+f.name+"<br>"+f.phone+"<br>"+f.email+"<br>";
+			// 		$(Cont).appendTo("#cont");
+			// 	});
+			// });
 		};
 	</script>
 </head>
 <body>
 <div class="wrapper">
-	<button onclick="function1()">Click</button>
+	<button onclick="function1()" id="b1">Click</button>
+	<button onclick="function1()" id="b2">Click</button>
 	<div id="intro"></div>
 	<div id="cont"></div>
 </div>
